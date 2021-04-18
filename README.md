@@ -6,7 +6,7 @@ This is a semester project of the group:
 - 19SW27
 - 19SW46
 - 19SW37
-- 19SW119
+- 19SW117
 
 This project uses:
 - HTML, CSS, Bootstrap, MDB, JS for Frontend
