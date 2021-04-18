@@ -1,0 +1,671 @@
+body {
+    font-family: Montserrat!important;
+    ;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+    }
+}
+
+.view,
+body,
+html {
+    height: 100%
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.page-footer,
+.top-nav-collapse {
+    background-color: #1C2331
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background-color: #1C2331
+    }
+}
+
+
+/*CARDS CSS*/
+
+.recomended-sec {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.recomended-sec h2 {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 15px;
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.recomended-sec hr {
+    margin: 0;
+    margin-top: -20px;
+    border-top: 1px solid #999999;
+}
+
+.recomended-sec .title {
+    margin-bottom: 70px;
+}
+
+.recomended-sec .item {
+    border: 1px solid #d5d5d5;
+    padding: 36px 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.recomended-sec .item img {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.recomended-sec .item h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 10px;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recomended-sec .item h6 {
+    font-size: 12px;
+}
+
+.recomended-sec .item h6 span {
+    color: #ff0000;
+}
+
+.recomended-sec .item h6 a {
+    color: #000;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 1px;
+}
+
+.recomended-sec .item h6 a:hover {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #ff9700;
+}
+
+.recomended-sec .item .hover {
+    position: absolute;
+    background: rgba(204, 204, 204, 0.7);
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+.recomended-sec .item .hover span {
+    margin: 0 auto;
+    font-size: 50px;
+    margin-top: 40px;
+    transition: all 0.4s;
+}
+
+.recomended-sec .item .hover a {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    color: #000;
+}
+
+.recomended-sec .item:hover .hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.recomended-sec .item:hover span {
+    margin-top: 0;
+}
+
+.recomended-sec .item .sale {
+    background: #f9372c;
+    padding: 10px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.recent-book-sec {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.recent-book-sec h2 {
+    display: inline-block;
+    padding: 0 15px;
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.recent-book-sec hr {
+    margin: 0;
+    margin-top: -20px;
+    border-top: 1px solid #999999;
+}
+
+.recent-book-sec .title {
+    margin-bottom: 80px;
+}
+
+.recent-book-sec .item {
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.recent-book-sec .item img {
+    margin-bottom: 15px;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.recent-book-sec .item img:hover+h3 {
+    text-decoration: underline;
+}
+
+.recent-book-sec .item h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.recent-book-sec .item h3 a {
+    color: inherit;
+}
+
+.recent-book-sec .item h6 {
+    font-size: 12px;
+}
+
+.recent-book-sec .item h6 span {
+    color: #ff0000;
+}
+
+.recent-book-sec .item h6 a {
+    color: #000;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 1px;
+}
+
+.recent-book-sec .item h6 a:hover {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #ff9700;
+}
+
+.recent-book-sec .row {
+    margin: 0 -30px;
+}
+
+.recent-book-sec .row .col-lg-2 {
+    padding: 0 30px;
+    -ms-flex: 20%;
+    flex: 20%;
+    max-width: 20%;
+}
+
+.recent-book-sec .btn-sec {
+    margin-top: 20px;
+}
+
+.features-sec {
+    margin-bottom: 100px;
+}
+
+.features-sec ul li {
+    text-align: center;
+    padding: 0 20px 60px;
+    border: 1px solid #cacaca;
+    float: left;
+    width: 33.333%;
+    list-style: none;
+    border-left: 0;
+}
+
+.features-sec ul li:first-child {
+    border-left: 1px solid #cacaca;
+}
+
+.features-sec ul li span.icon {
+    width: 65px;
+    height: 65px;
+    border: 1px solid #cbcbcb;
+    display: block;
+    border-radius: 50%;
+    margin-top: -33px;
+    margin: 0 auto;
+    margin-top: -33px;
+    background: #fff;
+    font-size: 22px;
+    vertical-align: middle;
+    padding: 15px 0;
+    color: #ffaf00;
+    margin-bottom: 30px;
+}
+
+.features-sec ul li span.icon.return {
+    color: #00aeef;
+}
+
+.features-sec ul li span.icon.chat {
+    color: #00a99d;
+}
+
+.features-sec ul li h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.features-sec ul li h5 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.features-sec ul li h6 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    opacity: 0.7;
+}
+
+.offers-sec {
+    padding: 90px 0;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+.offers-sec .detail {
+    background: #fff;
+    padding: 60px 44px;
+    position: relative;
+}
+
+.offers-sec .detail h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.offers-sec .detail h6 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-right: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.offers-sec .detail .icon-point {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    padding-bottom: 10px;
+}
+
+.offers-sec .detail .icon-point.amount {
+    opacity: 1;
+    padding: 10px 10px;
+}
+
+.offers-sec .row {
+    margin: 0 -40px;
+}
+
+.offers-sec .row .col-md-6 {
+    padding: 0 40px;
+}
+
+.offers-sec .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+
+.testimonial-sec {
+    padding: 80px 0;
+    position: relative;
+}
+
+.testimonial-sec .item {
+    text-align: center;
+    padding: 0 140px 100px;
+}
+
+.testimonial-sec .item h3 {
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.testimonial-sec .item .author {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimonial-sec .item .country {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.testimonial-sec .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-sec button.owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #cdcdcd;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.testimonial-sec button.owl-dot.active {
+    background: #ff9700;
+    transform: scale(1.6);
+}
+
+.testimonial-sec .left-quote {
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.testimonial-sec .right-quote {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .cart .quntity {
+        font-size: 10px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+    .recent-book-sec .row {
+        margin: 0 -20px;
+    }
+    .recent-book-sec .row .col-lg-2 {
+        padding: 0 20px;
+    }
+    .recent-book-sec .row {
+        margin: 0 -20px;
+    }
+    .recent-book-sec .row .col-md-2 {
+        padding: 0 20px;
+    }
+    .offers-sec .row {
+        margin: 0 -20px;
+    }
+    .offers-sec .row .col-md-6 {
+        padding: 0 20px;
+    }
+    .about-sec .about-content {
+        max-width: 580px;
+        padding-left: 40px;
+    }
+    .offers-sec .detail h3 {
+        font-size: 22px;
+    }
+    .testimonial-sec .item h3 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header .header-top h5 {
+        font-size: 12px;
+    }
+    header .header-top .ph-number {
+        font-size: 12px;
+    }
+    header .main-menu {
+        padding: 20px 0;
+    }
+    header .main-menu .navbar-light .navbar-nav .navbar-item {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    header .main-menu .navbar-light .navbar-nav .navbar-item:after {
+        display: none;
+    }
+    header .cart {
+        max-width: 34px;
+    }
+    header .main-menu .form-inline {
+        max-width: 200px;
+    }
+    .recomended-sec h2 {
+        font-size: 26px;
+    }
+    .recomended-sec hr {
+        margin-top: -15px;
+    }
+    .recomended-sec .item {
+        margin-bottom: 30px;
+    }
+    .recomended-sec {
+        margin-bottom: 50px;
+    }
+    .recent-book-sec .row .col-lg-2 {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+    }
+    .about-sec .about-content {
+        max-width: 440px;
+        padding: 40px 0 40px 25px;
+    }
+    .offers-sec .detail {
+        padding: 45px 34px;
+    }
+    .offers-sec .detail h6 {
+        padding-right: 0;
+    }
+    .testimonial-sec {
+        padding: 80px 0 60px;
+    }
+    .testimonial-sec .item {
+        padding: 0 50px 80px;
+    }
+    .testimonial-sec .item h3 {
+        font-size: 26px;
+        line-height: 42px;
+    }
+    header .main-menu .form-inline input {
+        width: 170px;
+        height: 38px;
+    }
+    .offers-sec .detail .icon-point {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header .header-top .ph-number {
+        float: initial;
+    }
+    header .navbar-nav {
+        padding-top: 10px;
+    }
+    .slider .slide .content .title {
+        padding: 0 10px;
+    }
+    .slider .slide .content .title h3 {
+        font-size: 24px;
+    }
+    .slider .slide .content .title h5 {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .btn {
+        padding: 10px 15px 9px;
+    }
+    .slider .owl-dots {
+        bottom: 10px;
+    }
+    .about-sec {
+        padding-bottom: 60px;
+    }
+    .about-sec .about-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .about-sec .about-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-sec .about-content h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .about-sec .about-content p {
+        margin-bottom: 20px;
+    }
+    .about-sec .about-content .btn-sec {
+        margin-top: 34px;
+    }
+    .recent-book-sec .row {
+        margin: 0 -15px;
+    }
+    .features-sec ul li {
+        padding: 0 10px 40px;
+    }
+    .features-sec ul li h3 {
+        font-size: 20px;
+    }
+    .offers-sec .detail {
+        margin-bottom: 20px;
+    }
+    .recent-book-sec .row .col-lg-2 {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    .offers-sec .row {
+        margin: 0 -15px;
+    }
+    .offers-sec .row .col-md-6 {
+        padding: 0 15px;
+    }
+    .slider .slide .content .title h3 {
+        font-size: 22px;
+    }
+    .slider .slide .content .title h5 {
+        font-size: 12px;
+    }
+    .recomended-sec .title {
+        margin-bottom: 40px;
+    }
+    .recomended-sec h2 {
+        font-size: 22px;
+    }
+    .recent-book-sec h2 {
+        font-size: 22px;
+    }
+    .features-sec ul li {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .features-sec ul li:last-child {
+        margin-bottom: 0;
+    }
+    .features-sec ul li {
+        border: 1px solid #cacaca;
+    }
+    .offers-sec .detail {
+        padding: 40px 24px;
+    }
+    .offers-sec {
+        padding: 80px 0 60px;
+    }
+    .testimonial-sec {
+        padding: 60px 0 40px;
+    }
+    .testimonial-sec .item h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .testimonial-sec .item {
+        padding: 0 20px 80px;
+    }
+    .testimonial-sec .left-quote {
+        left: 0px;
+    }
+    .testimonial-sec .right-quote {
+        right: 0px;
+    }
+    .recent-book-sec .row .col-lg-2 {
+        padding: 0 15px;
+    }
+    .recent-book-sec .row {
+        margin: 0 -15px;
+    }
+}
+
+.btn {
+    background: #ff9700;
+    opacity: 1;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 20px 11px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    border: 2px solid #ff9700;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #ff9700;
+}
